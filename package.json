@@ -1,0 +1,23 @@
+{
+  "name": "final_project_web",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/luusss/Final_Project_Web#readme",
+  "bugs": {
+    "url": "https://github.com/luusss/Final_Project_Web/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luusss/Final_Project_Web.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
