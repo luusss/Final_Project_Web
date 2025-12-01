@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home mame</title>
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">LUSS</div>
+        <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT ME</a></li>
+            <li><a href="#">SCHOOL</a></li>
+            <li><a href="#">FUNNY</a></li>
+        </ul>
+    </nav>
+
+    <!-- Slider -->
+    <div class="slider">
+        <div class="slides" id="slide-container">
+            <img src="img1.png" class="slide">
+            <img src="img2.png" class="slide">
+            <img src="img3.png" class="slide">
+        </div>
+
+        <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <!-- Text Section -->
+    <div class="content">
+        <div class="item">
+            <img src="food1.jpg">
+            <p>
+                Anyone can make you smile. Many people can make you cry. But it takes someone 
+                really special to make you smile with tears in your eyes.
+            </p>
+        </div>
+
+        <div class="item">
+            <p>
+                Someone who really loves you sees what a mess you can be, how moody you can get, 
+                how hard you are to handle, but still wants you in their life.
+            </p>
+            <img src="food2.jpg">
+        </div>
+    </div>
+
+    <footer>© 2025 LUSSS. All rights reserved.</footer>
+
+    <script>
+        let index = 0;
+        const slides = document.querySelectorAll(".slide");
+
+        function showSlide(i) {
+            index = (i + slides.length) % slides.length;
+            document.getElementById("slide-container").style.transform =
+                `translateX(${-index * 100}%)`;
+        }
+
+        function moveSlide(step) {
+            showSlide(index + step);
+        }
+    </script>
+
 </body>
 </html>
