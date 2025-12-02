@@ -8,64 +8,70 @@
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="logo">LUSS</div>
-        <ul class="nav-links">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT ME</a></li>
-            <li><a href="#">SCHOOL</a></li>
-            <li><a href="#">FUNNY</a></li>
-        </ul>
-    </nav>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="logo">LUSS</div>
+    <ul class="nav-links">
+        <li><a href="Home.html">HOME</a></li>
+        <li><a href="#">ABOUT ME</a></li>
+        <li><a href="#">SCHOOL</a></li>
+        <li><a href="Funny.html">FUNNY</a></li>
+    </ul>
+</nav>
 
-    <!-- Slider -->
-    <div class="slider">
-        <div class="slides" id="slide-container">
-            <img src="photo/andy idol.png" class="slide">
-            <img src="img2.png" class="slide">
-            <img src="img3.png" class="slide">
-        </div>
-
-        <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
+<!-- Slider -->
+<div class="slider">
+    <div class="slides" id="slide-container">
+        <img src="photo/andy idol.png" class="slide">
+        <img src="photo/andy idol.png" class="slide">
+        <img src="photo/andy idol.png" class="slide">
     </div>
 
-    <!-- Text Section -->
-    <div class="content">
-        <div class="item">
-            <img src="food1.jpg">
-            <p>
-                Anyone can make you smile. Many people can make you cry. But it takes someone 
-                really special to make you smile with tears in your eyes.
-            </p>
-        </div>
+    <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
+</div>
 
-        <div class="item">
-            <p>
-                Someone who really loves you sees what a mess you can be, how moody you can get, 
-                how hard you are to handle, but still wants you in their life.
-            </p>
-            <img src="food2.jpg">
-        </div>
+<div class="content">
+
+    <div class="item">
+        <img src="photo/potato.jpg">
+        <p>
+            Anyone can make you smile. Many people can make you cry. 
+            But it takes someone special to make you smile with tears in your eyes.
+        </p>
     </div>
 
-    <footer>© 2025 LUSSS. All rights reserved.</footer>
+    <div class="item">
+        <p>
+            Someone who really loves you sees what a mess you can be, how moody you get,
+            how hard you are to handle, but still wants you in their life.
+        </p>
+        <img src="photo/pasta.jpg">
+    </div>
 
-    <script>
-        let index = 0;
-        const slides = document.querySelectorAll(".slide");
+</div>
 
-        function showSlide(i) {
-            index = (i + slides.length) % slides.length;
-            document.getElementById("slide-container").style.transform =
-                `translateX(${-index * 100}%)`;
-        }
+<footer>© 2025 LUSSS. All rights reserved.</footer>
 
-        function moveSlide(step) {
-            showSlide(index + step);
-        }
-    </script>
+<script>
+    let index = 0;
+    const slides = document.querySelectorAll(".slide");
+
+    function showSlide(i) {
+        index = (i + slides.length) % slides.length;
+        document.getElementById("slide-container").style.transform =
+            `translateX(${-index * 100}%)`;
+    }
+
+    function moveSlide(step) {
+        showSlide(index + step);
+    }
+
+    // Auto play
+    setInterval(() => {
+        moveSlide(1);
+    }, 3000);
+</script>
 
 </body>
 </html>

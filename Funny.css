@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f2ee;
+    color: #4e4a42;
+}
+
+/* Navigation (same style as homepage) */
+.navbar {
+    background: #c8c0b8;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #4e4a42;
+}
+
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Parallax backgrounds */
+.parallax {
+    height: 300px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg1 { background-image: url('funnybg1.jpg'); }
+.bg2 { background-image: url('funnybg2.jpg'); }
+.bg3 { background-image: url('funnybg3.jpg'); }
+
+/* Content section */
+.content-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Meme card styles */
+.meme-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+}
+
+.meme-card {
+    width: 250px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    background: white;
+    transform: translateY(40px);
+    opacity: 0;
+    animation: floatUp 1s ease forwards;
+}
+
+.meme-card img {
+    width: 100%;
+    display: block;
+}
+
+/* Animation */
+@keyframes floatUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+}
