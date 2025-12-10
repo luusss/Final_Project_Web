@@ -17,6 +17,7 @@ body {
   .logo {
     font-size: 28px;
     font-weight: bold;
+    font-family: 'MyFont', sans-serif;
   }
   
   .nav-links {
@@ -28,6 +29,7 @@ body {
   .nav-links li a {
     text-decoration: none;
     color: #4e4a42;
+    font-family: 'MyFont2', sans-serif;
   }
   
   .active {
@@ -105,6 +107,21 @@ footer {
     padding: 20px;
     font-size: 13px;
   }
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('font/helloparisserif-regular.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyFont2';
+  src: url('font/Grown.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
   /* Responsive */
   @media (max-width: 600px) {
     .item {
