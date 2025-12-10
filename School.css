@@ -31,7 +31,7 @@ body {
     color: #4e4a42;
     font-family: 'MyFont2', sans-serif;
   }
-
+ /*靠近時的顏色*/
   .nav-links a:hover{
   color: #9e9a8d;
 }
