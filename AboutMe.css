@@ -91,12 +91,21 @@ body {
   }
 }
 
-/* Footer */
+/* Footer 
 footer {
   text-align: center;
   padding: 20px;
-}
+}*/
 
+/* Footer */
+/* Footer */
+footer {
+  background: linear-gradient(#aaa59a);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+}
 
 /* Responsive */
 @media (max-width: 600px) {
