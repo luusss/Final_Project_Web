@@ -82,6 +82,7 @@ body {
     display: flex;
     align-items: center;
     margin: 25px 0;
+    
 }
 
 .item img {
@@ -95,6 +96,7 @@ body {
 .item p {
     font-size: 17px;
     line-height: 1.6;
+    font-family: 'MyFont2', sans-serif;
 }
 
 /* Footer */
