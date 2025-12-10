@@ -96,3 +96,16 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+
+/* Responsive */
+@media (max-width: 600px) {
+    .item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .item img {
+        margin-bottom: 15px;
+    }
+}
