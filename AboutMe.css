@@ -32,6 +32,10 @@ body {
   font-family: 'MyFont2', sans-serif;
 }
 
+.nav-links a:hover{
+  color: #9e9a8d;
+}
+
 .active {
   font-weight: bold;
   text-decoration: underline;
