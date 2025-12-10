@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<div class="dots">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<div id="loading-screen">
+  <div class="loader"></div>
+</div>
+
+<div id="content" style="display:none;">
+  <!-- 真正網站內容 -->
+  <h1>網站內容載好了！</h1>
+</div>
+<script>
+  window.onload = function() {
+    document.getElementById("loading-screen").style.display = "none";
+    document.getElementById("content").style.display = "block";
+  };
+</script>
+
+<body>
+    
+</body>
+</html>
