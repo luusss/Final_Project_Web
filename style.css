@@ -34,6 +34,11 @@ body {
     font-family: 'MyFont2', sans-serif;
 }
 
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
  /*靠近時的顏色變化*/
 .nav-links a:hover{
   color: #9e9a8d;
