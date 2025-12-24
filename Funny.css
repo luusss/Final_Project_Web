@@ -162,3 +162,95 @@ footer {
         margin-bottom: 15px;
     }
 }
+
+
+
+
+
+/* =========================
+   Contact Section Only
+   ========================= */
+
+   #contact {
+    padding: 100px 0;
+  }
+  
+  @media (min-width: 768px) {
+    #contact {
+      padding: 150px 0;
+    }
+  }
+  
+  /* ===== 標題 ===== */
+  #contact .section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  #contact .section-subheading {
+    font-size: 16px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 75px;
+    color: #777777;
+  }
+  
+  /* ===== 表單欄位 ===== */
+  #contact .form-control {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* textarea 高度 */
+  #contact textarea.form-control {
+    height: auto;
+    min-height: 150px;
+  }
+  
+  /* ===== 表單提示文字 ===== */
+  #contact .help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  #contact .text-danger {
+    color: #a94442;
+  }
+  
+  /* ===== 按鈕 ===== */
+  #contact .btn-xl {
+    color: #ffffff;
+    background-color: #89836e;
+    border: 1px solid #89836e;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 20px 40px;
+    border-radius: 3px;
+  }
+  
+  #contact .btn-xl:hover,
+  #contact .btn-xl:focus,
+  #contact .btn-xl:active {
+    color: #ffffff;
+    background-color: #89836e;
+    border-color: #89836e;
+  }
+  
+  /* ===== 置中 ===== */
+  #contact .text-center {
+    text-align: center;
+  }
+  
+  
