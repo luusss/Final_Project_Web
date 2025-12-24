@@ -267,5 +267,9 @@ footer {
   #contact .text-center {
     text-align: center;
   }
-  
+  #contact form {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
   
