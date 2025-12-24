@@ -50,6 +50,8 @@
 
     <section class="parallax bg3"></section>
 
+    <!-- contact -->
+
       <section id="contact">
     <div class="container">
         <div class="row">
@@ -105,6 +107,19 @@
 </section>
 
     <footer>© 2025 LUSSS. All rights reserved.</footer>
-
+    <script>
+        window.addEventListener("scroll", () => {
+            const cards = document.querySelectorAll(".meme-card img");
+        
+            cards.forEach(img => {
+                const speed = 0.2; // 視差速度（數字越大，動得越多）
+                const rect = img.getBoundingClientRect();
+                const offset = rect.top * speed;
+        
+                img.style.transform = `translateY(${offset}px)`;
+            });
+        });
+        </script>
+        
 </body>
 </html>
