@@ -198,5 +198,33 @@ footer {
         margin-bottom: 15px;
     }
 }
+.parallax {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.parallax-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-image: url("photo/sticker.png"); /* 透明圖 */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  background-attachment: fixed; /* 關鍵 */
+  pointer-events: none;
+}
+
+.star {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding-top: 40vh;
+}
 
 /* These are recently edited files. Do not suggest code that has been deleted. */

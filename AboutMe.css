@@ -89,6 +89,36 @@ body {
   display: block;
 }
 
+/* Content */
+.content {
+    width: 80%;
+    margin: 30px auto;
+    
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 0 20px;
+}
+
+.item p {
+    font-size: 17px;
+    line-height: 1.6;
+    font-family: 'MyFont2', sans-serif;
+}
+
 /* Animation */
 @keyframes floatUp {
   to {
