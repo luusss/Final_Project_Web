@@ -61,11 +61,11 @@ server.get("/portfolio", (req, res) => {
     
 })
 
-server.get("/about", (req, res) => {
+server.get("/Home", (req, res) => {
     res.send("Welcome " + req.query.user + " to My first NodeJS server!");
 })
 
-server.post("/contact", (req, res) =>{
+server.post("/contact", (req, res) => {
     ContactDB.insert(req.body);
     //move to public/upload
     var upFile=req.files.myFile1;
