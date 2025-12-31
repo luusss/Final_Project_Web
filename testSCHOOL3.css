@@ -3,77 +3,77 @@ body {
     font-family: Arial, sans-serif;
     background: #f7f2ee;
     color: #4e4a42;
-}
-
-/* Navigation (same style as homepage) */
-.navbar {
+  }
+  
+  /* Navigation (same style as homepage) */
+  .navbar {
     background: #c8c0b8;
     padding: 20px 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.logo {
+  }
+  
+  .logo {
     font-size: 28px;
     font-weight: bold;
     font-family: 'MyFont', sans-serif;
-}
-
-.nav-links {
+  }
+  
+  .nav-links {
     list-style: none;
     display: flex;
     gap: 40px;
-}
-
-.nav-links li a {
+  }
+  
+  .nav-links li a {
     text-decoration: none;
     color: #4e4a42;
     font-family: 'MyFont2', sans-serif;
-}
-
-.nav-links a:hover{
+  }
+ /*靠近時的顏色*/
+  .nav-links a:hover{
   color: #9e9a8d;
 }
-
-.active {
+  
+  .active {
     font-weight: bold;
     text-decoration: underline;
-}
-
-/* Parallax backgrounds */
-.parallax {
+  }
+  
+  /* Parallax backgrounds */
+  .parallax {
     height: 300px;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-}
-
-.bg1 { background-image: url('funnybg1.jpg'); }
-.bg2 { background-image: url('funnybg2.jpg'); }
-.bg3 { background-image: url('funnybg3.jpg'); }
-
-/* Content section */
-.content-section {
+  }
+  
+  .bg1 { background-image: url('funnybg1.jpg'); }
+  .bg2 { background-image: url('funnybg2.jpg'); }
+  .bg3 { background-image: url('funnybg3.jpg'); }
+  
+  /* Content section */
+  .content-section {
     padding: 60px 20px;
     text-align: center;
-}
-
-.title {
+  }
+  
+  .title {
     font-size: 32px;
     margin-bottom: 10px;
-}
-
-/* Meme card styles */
-.meme-area {
+  }
+  
+  /* Meme card styles */
+  .meme-area {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     padding: 50px 20px;
-}
-
-.meme-card {
+  }
+  
+  .meme-card {
     width: 250px;
     border-radius: 12px;
     overflow: hidden;
@@ -82,66 +82,27 @@ body {
     transform: translateY(40px);
     opacity: 0;
     animation: floatUp 1s ease forwards;
-}
-
-.meme-card img {
+  }
+  
+  .meme-card img {
     width: 100%;
     display: block;
-}
-/* Meme gif card styles */
-.meme-gif {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 50px 20px;
-}
-
-.meme-gif-card {
-    width: 250px;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    background: white;
-    transform: translateY(40px);
-    opacity: 0;
-    animation: floatUp 1s ease forwards;
-}
-
-.meme-gif-card img {
-    width: 100%;
-    display: block;
-}
-
-.meme-card {
-    position: relative;
-    overflow: hidden;
-}
-
-.meme-card img {
-    width: 100%;
-    display: block;
-    will-change: transform;
-    transition: transform 0.1s linear;
-}
-.meme-card:hover img {
-    transform: scale(1.05);
-}
-
-/* Animation */
-@keyframes floatUp {
+  }
+  
+  /* Animation */
+  @keyframes floatUp {
     to {
         transform: translateY(0);
         opacity: 1;
     }
-}
-
-/* Footer 
-.footer {
+  }
+  
+  /* Footer 
+  footer {
     text-align: center;
     padding: 20px;
-}*/
-
+  }*/
+  
 /* Footer */
 footer {
     background: linear-gradient(#aaa59a);
@@ -150,8 +111,6 @@ footer {
     padding: 20px;
     font-size: 13px;
   }
-  
-
 
 @font-face {
   font-family: 'MyFont';
@@ -166,19 +125,20 @@ footer {
   font-style: normal;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+
+  /* Responsive */
+  @media (max-width: 600px) {
     .item {
         flex-direction: column;
         text-align: center;
     }
-
+  
     .item img {
         margin-bottom: 15px;
     }
-}
+  }
 
-/* =========================
+  /* =========================
    Contact Section Only
    ========================= */
 
@@ -267,9 +227,3 @@ footer {
   max-width: 900px;
   margin: 0 auto;
 }
-
-#title123 {
-    color: #4e4a42;
-    font-size: 5em;
-    position: relative;
-      }  

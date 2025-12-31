@@ -20,63 +20,59 @@
       </ul>
   </nav>
 
-  <section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Contact Us</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <form name="sentMessage" id="contactForm" action="/contact"  method="POST" enctype="multipart/form-data">
-                <!-- <form name="sentMessage" id="contactForm" action="/contact"  method="POST" enctype="application/json"> -->
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your Name *" id="name" name="username" required
-                                    data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Your Email *" id="email" name="email"
-                                    required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" name="telphone"
-                                    required data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <textarea class="form-control" placeholder="Your Message *" id="message" name="msg" required
-                                    data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="file" name="myFile1" id="myFile1" accept="image/*">
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="col-lg-12 text-center">
-                            <div id="success"></div>
-                            <button type="submit" class="btn btn-xl">Send Message</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
+  <!-- Slider -->
+<div class="slider">
+    <div class="slides" id="slide-container">
+        <img src="photo/andy idol.png" class="slide">
+        <img src="photo/andy idol.png" class="slide">
+        <img src="photo/andy idol.png" class="slide">
     </div>
-</section>
 
+    <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
+</div>
 
+<div class="content">
 
-  <footer>© 2025 LUSSS. All rights reserved.</footer>
+    <div class="item">
+        <img src="photo/potato.jpg">
+        <p>
+            Anyone can make you smile. Many people can make you cry. 
+            But it takes someone special to make you smile with tears in your eyes.
+        </p>
+    </div>
+
+    <div class="item">
+        <p>
+            Someone who really loves you sees what a mess you can be, how moody you get,
+            how hard you are to handle, but still wants you in their life.
+        </p>
+        <img src="photo/pasta.jpg">
+    </div>
+
+</div>
+
+<footer>© 2025 LUSSS. All rights reserved.</footer>
+
+<script>
+    let index = 0;
+    const slides = document.querySelectorAll(".slide");
+
+    function showSlide(i) {
+        index = (i + slides.length) % slides.length;
+        document.getElementById("slide-container").style.transform =
+            `translateX(${-index * 100}%)`;
+    }
+
+    function moveSlide(step) {
+        showSlide(index + step);
+    }
+
+    // Auto play
+    setInterval(() => {
+        moveSlide(1);
+    }, 3000);
+</script>
 
 </body>
 </html>

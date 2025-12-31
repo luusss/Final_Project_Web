@@ -3,67 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funny - LUSS</title>
-    <link rel="stylesheet" href="funny.css">
+    <title>testSCHOOL3</title>
+    <link rel="stylesheet" href="testSCHOOL3.css">
 </head>
 <body>
-
-    <!-- Navigation (same as homepage) -->
+</head>
+<body>
+    <body>
     <nav class="navbar">
-        <div class="logo">LUSS</div>
-        <ul class="nav-links">
-            <li><a href="Home.html">HOME</a></li>
-            <li><a href="AboutMe.html">ABOUT ME</a></li>
-            <li><a href="School.html">SCHOOL</a></li>
-            <li><a href="Funny.html" class="active">FUNNY</a></li>
-        </ul>
-    </nav>
+      <div class="logo">LUSS</div>
+      <ul class="nav-links">
+          <li><a href="Home.html">HOME</a></li>
+          <li><a href="AboutMe.html">ABOUT ME</a></li>
+          <li><a href="School.html"class="active">SCHOOL</a></li>
+          <li><a href="Funny.html" >FUNNY</a></li>
+      </ul>
+  </nav>
 
-    <!-- Parallax Sections -->
-    <section class="parallax bg1"></section>
-
-    <section class="content-section">
-        <h2 id="title123">Funny Memes Collection</h2>
-        <p>Scroll down and enjoy the chaos!</p>
-    </section>
-    </header>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <section class="parallax bg2"></section>
-
-    </h2>
-    <section class="meme-gif">
-        <div class="meme-gif-card"><img src="photo/icegif-564.gif" ></div>
-        <div class="meme-gif-card"><img src="photo/icegif-564.gif"></div>
-        <div class="meme-gif-card"><img src="photo/icegif-564.gif"></div>
-        <div class="meme-gif-card"><img src="photo/icegif-564.gif"></div>
-    </section>
-    
-
-    <!-- meme cards -->
-    <section class="meme-area">
-        <div class="meme-card"><img src="photo/PPP.jpg"></div>
-        <div class="meme-card"><img src="photo/GAY.jpg"></div>
-        <div class="meme-card"><img src="photo/GAY2.jpg"></div>
-        <div class="meme-card"><img src="photo/GGfire.jpg"></div>
-        <div class="meme-card"><img src="photo/images.jpg"></div>
-        <div class="meme-card"><img src="photo/images - 2.jpg"></div>
-    </section>
-
-    <section class="parallax bg3"></section>
-
-    <!-- contact -->
-
-      <section id="contact">
+  <section id="contact">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Contact Us</h2>
-                <h3 class="section-subheading text-muted">Share Your Favorite Memes (◔౪◔)</h3>
+                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
         </div>
         <div class="row">
@@ -103,7 +65,7 @@
                         <div class="clearfix"></div>
                         <div class="col-lg-12 text-center">
                             <div id="success"></div>
-                            <button type="submit" class="btn btn-xl">Send</button>
+                            <button type="submit" class="btn btn-xl">Send Message</button>
                         </div>
                     </div>
                 </form>
@@ -112,23 +74,9 @@
     </div>
 </section>
 
-    <footer>© 2025 LUSSS. All rights reserved.</footer>
-    <script>
-       
-    gsap.to("#title123", { scrollTrigger: { scrub: 1 }, scale: 0.5, duration: 3 });
 
-        window.addEventListener("scroll", () => {
-            const cards = document.querySelectorAll(".meme-card img");
-        
-            cards.forEach(img => {
-                const speed = 0.2; // 視差速度（數字越大，動得越多）
-                const rect = img.getBoundingClientRect();
-                const offset = rect.top * speed;
-        
-                img.style.transform = `translateY(${offset}px)`;
-            });
-        });
-        </script>
-        
+
+  <footer>© 2025 LUSSS. All rights reserved.</footer>
+
 </body>
 </html>

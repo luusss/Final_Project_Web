@@ -6,9 +6,7 @@
   <title>test2</title>
   <link rel="stylesheet" href="test2.css" />
 </head>
-
 <body>
-
     <nav class="navbar">
         <div class="logo">LUSS</div>
         <ul class="nav-links">
@@ -18,82 +16,28 @@
             <li><a href="Funny.html" >FUNNY</a></li>
         </ul>
     </nav>
-
-    <div id="box"></div>
-    <svg width="100%" height="100%" viewBox="0 0 3200 1080" version="1.1" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
-        style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
-        <g transform="matrix(1,0,0,1,-146.605854,-316.625257)">
-            <path id="path0"
-                d="M168.296,856.016C170.513,853.799 57.413,175.195 332.402,465.708C607.392,756.222 634.004,840.493 809.199,683.039C984.394,525.585 864.641,235.072 1157.372,461.273C1450.103,687.474 1405.749,871.54 1651.91,669.733C1898.07,467.926 1811.581,463.491 1831.54,317.125"
-                style="fill:none;stroke:red;stroke-width:1px;" />
-        </g>
-    </svg>
-
-
-
+    <header>
   <!-- 頂部區域（在白框外） -->
-  
+           <h2 id="title">Funny Memes Collection</h2>
+        <section class="content-section">
+    </section>
     </header>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/MotionPathHelper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/MotionPathPlugin.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
 </head>
-<style>
-
-</style>
-
 <body>
     <header>
-        <h2 id="title">Mountains</h2>
+
     </header>
-    <div id="box"></div>
-    <svg width="100%" height="100%" viewBox="0 0 3200 1080" version="1.1" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
-        style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
-        <g transform="matrix(1,0,0,1,-146.605854,-316.625257)">
-            
-        </g>
-    </svg>
 </body>
+
 <script>
-    gsap.to("#box", {
-        duration: 3,
-        motionPath: {
-            path: "#path0",
-            align: "#path0",
-            alignOrigin: [0.5, 0.5],
-            autoRotate: 45
-        },
-        scrollTrigger: {
-            trigger: "#box",
-            start: "top 70%",
-            end: "bottom 68%",
-            toggleActions: "play reverse reverse restart",
-          
-        }
-   
-    });
-    MotionPathHelper.create("#box");
-
-    gsap.to("#bg", {
-        scrollTrigger: {
-            trigger: "#title",
-            start: "top 200px",
-            end: "top 100px",
-            scrub: 1,
-        },
-        scale: 2, duration: 3
-    });
     gsap.to("#title", { scrollTrigger: { scrub: 1 }, scale: 0.5, duration: 3 });
-
-   
 </script>
 
        <footer>© 2025 LUSSS. All rights reserved.</footer>

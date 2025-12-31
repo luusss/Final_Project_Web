@@ -3,106 +3,115 @@ body {
     font-family: Arial, sans-serif;
     background: #f7f2ee;
     color: #4e4a42;
-  }
-  
-  /* Navigation (same style as homepage) */
-  .navbar {
+}
+
+/* Navigation */
+.navbar {
     background: #c8c0b8;
     padding: 20px 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  
-  .logo {
+}
+
+.logo {
     font-size: 28px;
     font-weight: bold;
+    color: #4e4a42;
     font-family: 'MyFont', sans-serif;
-  }
-  
-  .nav-links {
+}
+
+.nav-links {
     list-style: none;
     display: flex;
     gap: 40px;
-  }
-  
-  .nav-links li a {
+}
+
+.nav-links li a {
     text-decoration: none;
     color: #4e4a42;
+    font-size: 16px;
     font-family: 'MyFont2', sans-serif;
-  }
- /*靠近時的顏色*/
-  .nav-links a:hover{
-  color: #9e9a8d;
 }
-  
-  .active {
+
+.active {
     font-weight: bold;
     text-decoration: underline;
-  }
-  
-  /* Parallax backgrounds */
-  .parallax {
-    height: 300px;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .bg1 { background-image: url('funnybg1.jpg'); }
-  .bg2 { background-image: url('funnybg2.jpg'); }
-  .bg3 { background-image: url('funnybg3.jpg'); }
-  
-  /* Content section */
-  .content-section {
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 32px;
-    margin-bottom: 10px;
-  }
-  
-  /* Meme card styles */
-  .meme-area {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 50px 20px;
-  }
-  
-  .meme-card {
-    width: 250px;
-    border-radius: 12px;
+}
+
+ /*靠近時的顏色變化*/
+.nav-links a:hover{
+  color: #9e9a8d;
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    width: 90%;
+    max-width: 350px;
+    margin: 40px auto;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    background: white;
-    transform: translateY(40px);
-    opacity: 0;
-    animation: floatUp 1s ease forwards;
-  }
-  
-  .meme-card img {
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+}
+
+.slide {
     width: 100%;
-    display: block;
-  }
-  
-  /* Animation */
-  @keyframes floatUp {
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-  }
-  
-  /* Footer 
-  footer {
-    text-align: center;
-    padding: 20px;
-  }*/
-  
+    height: 280px;
+    object-fit: cover;
+}
+
+/* Arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #e8e2dc;
+    border: none;
+    font-size: 28px;
+    padding: 10px;
+    cursor: pointer;
+    color: #5b564f;
+    /*border-radius: 100%;*/
+}
+
+.left { left: 10px; }
+.right { right: 10px; }
+
+/* Content */
+.content {
+    width: 80%;
+    margin: 30px auto;
+    
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 0 20px;
+}
+
+.item p {
+    font-size: 17px;
+    line-height: 1.6;
+    font-family: 'MyFont2', sans-serif;
+}
+
 /* Footer */
 footer {
     background: linear-gradient(#aaa59a);
@@ -112,6 +121,7 @@ footer {
     font-size: 13px;
   }
 
+/* Font */
 @font-face {
   font-family: 'MyFont';
   src: url('font/helloparisserif-regular.ttf') format('woff2');
@@ -124,106 +134,17 @@ footer {
   font-weight: normal;
   font-style: normal;
 }
+  
 
-
-  /* Responsive */
-  @media (max-width: 600px) {
+/* Responsive */
+@media (max-width: 600px) {
     .item {
         flex-direction: column;
         text-align: center;
     }
-  
+
     .item img {
         margin-bottom: 15px;
     }
-  }
-
-  /* =========================
-   Contact Section Only
-   ========================= */
-
-   #contact {
-    padding: 100px 0;
-  }
-  
-  @media (min-width: 768px) {
-    #contact {
-      padding: 150px 0;
-    }
-  }
-  
-  /* ===== 標題 ===== */
-  #contact .section-heading {
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 15px;
-  }
-  
-  #contact .section-subheading {
-    font-size: 16px;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic;
-    font-weight: 400;
-    margin-bottom: 75px;
-    color: #777777;
-  }
-  
-  /* ===== 表單欄位 ===== */
-  #contact .form-control {
-    display: block;
-    width: 100%;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #555;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  /* textarea 高度 */
-  #contact textarea.form-control {
-    height: auto;
-    min-height: 150px;
-  }
-  
-  /* ===== 表單提示文字 ===== */
-  #contact .help-block {
-    display: block;
-    margin-top: 5px;
-    margin-bottom: 10px;
-  }
-  
-  #contact .text-danger {
-    color: #a94442;
-  }
-  
-  /* ===== 按鈕 ===== */
-  #contact .btn-xl {
-    color: #ffffff;
-    background-color: #89836e;
-    border: 1px solid #89836e;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 18px;
-    padding: 20px 40px;
-    border-radius: 3px;
-  }
-  
-  #contact .btn-xl:hover,
-  #contact .btn-xl:focus,
-  #contact .btn-xl:active {
-    color: #ffffff;
-    background-color: #89836e;
-    border-color: #89836e;
-  }
-  
-  /* ===== 置中 ===== */
-  #contact .text-center {
-    text-align: center;
-  }
-  #contact form {
-  max-width: 900px;
-  margin: 0 auto;
 }
+
