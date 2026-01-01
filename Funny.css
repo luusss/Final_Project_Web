@@ -166,6 +166,13 @@ footer {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'MyFont3';
+  src: url('font/ChenYuluoyan-Thin-Monospaced.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Responsive */
 @media (max-width: 600px) {
     .item {
