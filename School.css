@@ -116,12 +116,6 @@ body {
     line-height: 1.6;
     font-family: 'MyFont3', sans-serif;
 }
-.item video {
-    display: block;          /* 影片變成區塊 */
-    margin: 0 auto;           /* 水平置中 */
-    object-fit: cover;        /* 影片填滿 */
-    border-radius: 15px; /* 調整數值來改變圓角大小 */      /* 四角圓角 */
-}
 
 
 /* Footer */
