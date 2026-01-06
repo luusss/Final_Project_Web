@@ -116,7 +116,12 @@ body {
 .item p {
     font-size: 17px;
     line-height: 1.6;
-    font-family: 'MyFont2', sans-serif;
+    font-family: 'MyFont3', sans-serif;
+}
+.item h1 {
+  font-size: 22px;
+  line-height: 1.6;
+  font-family: 'MyFont3', sans-serif;
 }
 
 /* Animation */
