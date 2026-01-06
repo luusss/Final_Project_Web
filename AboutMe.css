@@ -143,6 +143,7 @@ footer {
   font-size: 13px;
 }
 
+/* Font */
 @font-face {
   font-family: 'MyFont';
   src: url('font/helloparisserif-regular.ttf') format('woff2');
@@ -155,6 +156,12 @@ footer {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+    font-family: 'MyFont3';
+    src: url('font/ChenYuluoyan-Thin-Monospaced.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
 
 /* Responsive */
 @media (max-width: 600px) {
@@ -207,3 +214,4 @@ footer {
     font-size: 1.2rem;
     color: #333;
   }
+
