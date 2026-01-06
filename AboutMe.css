@@ -174,8 +174,7 @@ footer {
       margin-bottom: 15px;
   }
 }
-.row,
-  .section,section {
+.row,.section,section {
     position: relative;
     overflow: hidden;
   }
@@ -214,4 +213,8 @@ footer {
     font-size: 1.2rem;
     color: #333;
   }
-
+  .section,h3 {
+    font-size: 17px;
+    line-height: 1.6;
+    font-family: 'MyFont3', sans-serif;
+}
