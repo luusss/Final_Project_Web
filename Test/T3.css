@@ -183,3 +183,71 @@
     font-size: 1.2rem;
     color: #333;
   }
+
+  /* ===== Navigation ===== */
+/*box-right*/
+
+.box-right ul {
+  list-style: none;    /* 移除白點 */
+  padding-left: 0;
+  margin: 0;
+}
+
+.box-right li {
+  margin-bottom: 10px; /* 每個按鈕間距 */
+}
+
+.box-right a {
+  display: flex;                /* 用 flex 讓文字置中 */
+  justify-content: center;      /* 水平置中 */
+  align-items: center;          /* 垂直置中 */
+  width: 500px;                 /* 統一寬度（可自行調整） */
+  height: 100px;                 /* 統一高度（可自行調整） */
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  transition: 0.3s;
+  box-sizing: border-box;       /* 避免邊框影響大小 */
+}
+
+.box-right a:hover {
+  color: #f0c040;
+}
+
+/* ===== Main Content ===== */
+.medals-section h2 {
+  font-size: 2rem;
+  color: #f0c040;
+}
+
+.medals-section .subtitle {
+  color: #c76d6d;
+  margin-bottom: 2rem;
+}
+
+.medals-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/*.medal-info {
+  flex: 1 1 300px;
+  text-align: left;
+  background: #292620;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(204, 47, 47, 0.822);
+}*/
+
+.medal-preview img {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+}
