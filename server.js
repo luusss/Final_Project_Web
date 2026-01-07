@@ -19,8 +19,6 @@ server.get("/luusss", (req, res) => {
     luusssDB.find({},{_id:0}).then(results=>{
        
         res.send(results);
-    }).catch(error=>{
-
     })
     
 })
@@ -31,7 +29,7 @@ server.post("/luusss", (req, res) => {
     var upFile=req.files.myFile1;
     var ASD= "/upload/"+upFile.name;
     req.body.myFile1 = ASD;
-    upFile.mv(__dirname+"/public/upload/"+upFile.name, function(err){
+    upFile.mv(__dirname+"/Public/upload/"+upFile.name, function(err){
 
         });
          luusssDB.insert(req.body).catch(err => console.log(err));//加入資料庫
@@ -39,4 +37,4 @@ server.post("/luusss", (req, res) => {
 })
 
 
-server.listen(8080)
+server.listen(5500)
