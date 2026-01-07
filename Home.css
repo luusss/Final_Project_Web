@@ -160,3 +160,62 @@ footer {
     }
 }
 
+/* ===== Main Content ===== */
+.medals-section h2 {
+  font-size: 2rem;
+  color: #4e4a42;
+  text-align: center;
+}
+
+.medals-section .subtitle {
+  color: #aca28e;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.medals-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.medal-preview img {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+  
+}
+/*box-right*/
+
+.box-right ul {
+  list-style: none;    /* 移除白點 */
+  padding-left: 0;
+  margin: 0;
+}
+
+.box-right li {
+  margin-bottom: 10px; /* 每個按鈕間距 */
+}
+
+.box-right a {
+  display: flex;                /* 用 flex 讓文字置中 */
+  justify-content: center;      /* 水平置中 */
+  align-items: center;          /* 垂直置中 */
+  width: 500px;                 /* 統一寬度（可自行調整） */
+  height: 100px;                 /* 統一高度（可自行調整） */
+  color: #c8c0b8;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  transition: 0.3s;
+  box-sizing: border-box;       /* 避免邊框影響大小 */
+}
+
+.box-right a:hover {
+  color: #4e4a42;
+}
