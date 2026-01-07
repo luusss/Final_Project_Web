@@ -47,16 +47,20 @@
     <!-- meme cards -->
 <!-- meme cards -->
 <div id="luusss">
-  <section class="meme-area">
-    <div
-      v-for="item in luusss"
-    
-      class="meme-card"
-    >
-      <img v-bind:src="item.myFile1" >
-    </div>
-  </section>
-</div>
+    <section class="meme-area">
+      <div
+        v-for="(item, idx) in luusss"
+        :key="idx"
+        class="meme-card"
+      >
+        <img
+          :src="item.myFile1"
+          class="w-100"
+          alt=""
+        >
+      </div>
+    </section>
+  </div>
 
     <section class="parallax bg3"></section>
 
