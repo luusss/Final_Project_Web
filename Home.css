@@ -163,7 +163,8 @@ footer {
 /* ===== Main Content ===== */
 .medals-section h2 {
   font-size: 2rem;
-  color: #4e4a42;
+  color: #4e4a42; 
+  font-family: 'MyFont3', sans-serif;
   text-align: center;
 }
 
@@ -185,6 +186,7 @@ footer {
   max-width: 200px;
   display: block;
   margin: 0 auto;
+  justify-content: center;
   
 }
 /*box-right*/
@@ -205,15 +207,16 @@ footer {
   align-items: center;          /* 垂直置中 */
   width: 500px;                 /* 統一寬度（可自行調整） */
   height: 100px;                 /* 統一高度（可自行調整） */
-  color: #c8c0b8;
+  color: #ac9782;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(54, 44, 44, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 6px;
   transition: 0.3s;
   box-sizing: border-box;       /* 避免邊框影響大小 */
+  font-family: 'MyFont2', sans-serif;
 }
 
 .box-right a:hover {
