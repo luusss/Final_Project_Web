@@ -150,6 +150,39 @@ body {
     margin: 0 20px;
 }
 
+/*S1 Content */
+.S1content {
+    width: 80%;
+    margin: 30px auto;
+    
+}
+.S1 p {
+    font-size: 22px;
+    line-height: 1.6;
+    font-family: 'MyFont3', sans-serif;
+}
+.S1 h1 {
+    font-size: 30px;
+    line-height: 1.6;
+    font-family: 'MyFont3', sans-serif;
+}
+.S1 {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.S1 img {
+    width: 1080px;
+    height: 720px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 0 20px;
+}
+
 /* Footer */
 footer {
     background: linear-gradient(#aaa59a);
