@@ -160,28 +160,46 @@ footer {
     }
 }
 
-/* ===== Main Content ===== */
-.medals-section h2 {
+/* ===== Botton Content ===== */
+.botton-section img {
+  width: 120px;
+  height: auto;
+  display: block;
+}
+
+.arrow-gif {
+  display: flex;
+  justify-content: center; /* 水平置中 */
+  margin-bottom: 10px;     /* 跟下面文字留一點距離 */
+}
+
+.arrow-gif img {
+  width: 120px;            /* 保持原本尺寸 */
+  height: auto;
+  display: block;
+}
+
+.botton-section h2 {
   font-size: 2rem;
   color: #4e4a42; 
   font-family: 'MyFont3', sans-serif;
   text-align: center;
 }
 
-.medals-section .subtitle {
+.botton-section .subtitle {
   color: #aca28e;
   margin-bottom: 2rem;
   text-align: center;
 }
 
-.medals-container {
+.botton-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
 }
 
-.medal-preview img {
+.botton-preview img {
   width: 100%;
   max-width: 200px;
   display: block;
