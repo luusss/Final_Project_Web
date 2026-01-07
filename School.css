@@ -107,12 +107,12 @@ body {
 }
 
 .item p {
-    font-size: 17px;
+    font-size: 22px;
     line-height: 1.6;
     font-family: 'MyFont3', sans-serif;
 }
 .item h1 {
-    font-size: 22px;
+    font-size: 30px;
     line-height: 1.6;
     font-family: 'MyFont3', sans-serif;
 }
@@ -124,12 +124,12 @@ body {
     
 }
 .Game p {
-    font-size: 17px;
+    font-size: 22px;
     line-height: 1.6;
     font-family: 'MyFont3', sans-serif;
 }
 .Game h1 {
-    font-size: 22px;
+    font-size: 30px;
     line-height: 1.6;
     font-family: 'MyFont3', sans-serif;
 }
