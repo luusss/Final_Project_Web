@@ -106,18 +106,34 @@ body {
     margin: 0 20px;
 }
 
-/*Game */
-.itemG p {
+.item p {
     font-size: 17px;
     line-height: 1.6;
     font-family: 'MyFont3', sans-serif;
 }
-.itemG h1 {
+.item h1 {
     font-size: 22px;
     line-height: 1.6;
     font-family: 'MyFont3', sans-serif;
 }
-.itemG {
+
+/*Game Content */
+.Gamecontent {
+    width: 80%;
+    margin: 30px auto;
+    
+}
+.Game p {
+    font-size: 17px;
+    line-height: 1.6;
+    font-family: 'MyFont3', sans-serif;
+}
+.Game h1 {
+    font-size: 22px;
+    line-height: 1.6;
+    font-family: 'MyFont3', sans-serif;
+}
+.Game {
     display: flex;
     align-items: center;
     margin: 25px 0;
@@ -126,7 +142,7 @@ body {
     
 }
 
-.itemG img {
+.Game img {
     width: 250px;
     height: 250px;
     border-radius: 10px;
@@ -135,17 +151,16 @@ body {
 }
 
 
-.itemG p {
+.Game p {
     font-size: 17px;
     line-height: 1.6;
     font-family: 'MyFont3', sans-serif;
 }
-.itemG h1 {
+.Game h1 {
     font-size: 22px;
     line-height: 1.6;
     font-family: 'MyFont3', sans-serif;
 }
-
 /* Footer */
 footer {
     background: linear-gradient(#aaa59a);
