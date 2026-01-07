@@ -45,13 +45,13 @@
     
 
     <!-- meme cards -->
-    <section class="meme-area">
-        <div class="meme-card"><img src="photo/PPP.jpg"></div>
-        <div class="meme-card"><img src="photo/GAY.jpg"></div>
+    <section  class="meme-area">
+        <div  v-for="item in luusss" class="meme-card"><img  v-bind:src="item.myFile1"></div>
+        <!--<div class="meme-card"><img src="photo/GAY.jpg"></div>
         <div class="meme-card"><img src="photo/GAY2.jpg"></div>
         <div class="meme-card"><img src="photo/GGfire.jpg"></div>
         <div class="meme-card"><img src="photo/images.jpg"></div>
-        <div class="meme-card"><img src="photo/images - 2.jpg"></div>
+        <div class="meme-card"><img src="photo/images - 2.jpg"></div> -->
     </section>
 
     <section class="parallax bg3"></section>
@@ -68,7 +68,7 @@
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <form name="sentMessage" id="contactForm" action="/contact"  method="POST" enctype="multipart/form-data">
+                <form name="sentMessage" id="contactForm" action="/luusss"  method="POST" enctype="multipart/form-data">
                 <!-- <form name="sentMessage" id="contactForm" action="/contact"  method="POST" enctype="application/json"> -->
                     <div class="row">
                         <div class="col-md-6">

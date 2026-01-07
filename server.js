@@ -11,8 +11,7 @@ server.use(fileUpload({limits:{fileSize:2*1024*1024}}))
 
 var DB=require("nedb-promises");
 var luusssDB = DB.create(__dirname+"/luusss.db");
-var PorfolioDB = DB.create(__dirname+"/Porfolio.db");
-var ContactDB = DB.create(__dirname+"/Contact.db");
+
 
 
 server.get("/luusss", (req, res) => {
@@ -26,23 +25,17 @@ server.get("/luusss", (req, res) => {
     
 })
 
-server.get("/portfolio", (req, res) => {
 
-    PorfolioDB.find({}).then(results=>{
-        res.send(results);
-    })
-    
-})
-
-server.post("/contact", (req, res) => {
-    ContactDB.insert(req.body);
+server.post("/luusss", (req, res) => {
+  
     var upFile=req.files.myFile1;
+    var ASD= "/upload/"+upFile.name;
+    req.body.myFile1 = ASD;
     upFile.mv(__dirname+"/public/upload/"+upFile.name, function(err){
-        
-        res.redirect("/error.html");
 
-    })
-    res.redirect("/Home.html")
+        });
+         luusssDB.insert(req.body).catch(err => console.log(err));//加入資料庫
+    res.redirect("/Funny.html")
 })
 
 
