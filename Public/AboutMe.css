@@ -114,12 +114,12 @@ body {
 }
 
 .item p {
-    font-size: 17px;
+    font-size: 20px;
     line-height: 1.6;
     font-family: 'MyFont3', sans-serif;
 }
 .item h1 {
-  font-size: 22px;
+  font-size: 25px;
   line-height: 1.6;
   font-family: 'MyFont3', sans-serif;
 }
@@ -219,7 +219,7 @@ footer {
     color: #333;
   }
   .section,h3 {
-    font-size: 30px;
+    font-size: 35px;
     line-height: 1.6;
     font-family: 'MyFont3', sans-serif;
 }
